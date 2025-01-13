@@ -1,27 +1,19 @@
-name: Copy files with SCP
+name: Deploy to FTP Server
 
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
+    branches: [main]
 
 jobs:
-  copy:
+  FTP-Deploy-Action:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Copy to Remote Server
-      uses: pierrickdelrieu/scp-action@v0.1.1
+    - uses: actions/checkout@v2
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        host: ${{ secrets.DESTINATION_HOST }}
-        ssh_port: ${{ secrets.DESTINATION_SSH_PORT }}
-        ssh_username: ${{ secrets.SSH_USERNAME }}
-        ssh_key: ${{ secrets.SSH_KEY }}
-        ssh_passphrase: ${{ secrets.SSH_PASSPHRASE }}
-        source_dir: ${{ secrets.SOURCE_FOLDER }}
-        destination_dir: ${{ secrets.DESTINATION_FOLDER }}
-        rm: true
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local_dir: "./"  # Adjust this to your local directory
+        remote_dir: "/htdocs"  # Adjust this to your remote directory
