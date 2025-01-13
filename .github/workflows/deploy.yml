@@ -16,4 +16,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: "./"  # Adjust this to your local directory
-        server-dir: "/htdocs"  # Adjust this to your remote directory
+        server-dir: "/htdocs/"  # Adjust this to your remote directory
