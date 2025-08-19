@@ -1,11 +1,34 @@
 <mxfile host="65bd71144e">
     <diagram id="2lp3MCStgQCyfeQPla6p" name="Page-1">
-        <mxGraphModel dx="718" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="332" dy="175" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="140" y="110" width="120" height="60" as="geometry"/>
+                <mxCell id="2" value="Github" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;dashed=1;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="110" width="500" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="4" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Git&amp;nbsp; - Branch Main" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="140" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Arquivos (CSS, HTML)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="4">
+                    <mxGeometry x="30" y="70" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Gitflow" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="140" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;" edge="1" parent="1" source="7" target="9">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="670" y="230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="Roda meu github acction" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="380" y="200" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="FTP" style="shape=internalStorage;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="190" width="80" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
